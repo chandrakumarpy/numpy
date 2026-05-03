@@ -20,3 +20,16 @@ print(d6)
 print(d5+d6)
 d7 = np.full([2,3], 8)
 print(d7)
+# my array randam and reshapr -----------------
+import numpy as np
+arr1 = np.random.rand(10)
+print(arr1)
+arr2 = np.random.randn(3,4)
+print(arr2)
+arr3 = np.random.randint(3,40, size= (2,3))
+print(arr3)
+new_arr =arr3.astype(float)
+print(new_arr)
+print(arr3.reshape(1,6)) # change the shape
+print(arr3.ravel()) # convertoto 1 dim array
+print(arr3.flatten()) # convertoto 1 dim array no connection to old
